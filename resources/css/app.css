@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+      font-family: 'Work Sans';
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Work Sans';
+  /* background: linear-gradient(#b3ffab, #67fffc); */
+  overflow-y: scroll;
+}
+
+#header {
+  /* height: 80px; */
+  display: flex;
+  align-items: center;
+  /* background: linear-gradient(#444444, #333333); */
+  color: #bbbbbb;
+  /* overflow-y: scroll; */
+  background-color: #F9FAFB;
+}
+
+#headerContent {
+  margin-left: 10px;
+}
+
+#page {
+  display: flex;
+  height: calc( 100vh - 80px);
+  /* width: ; */
+  
+  /* calculate the height. Header is 30px */
+}
+
+#sideBar {
+  width: 328px;
+  background: #F9FAFB;
+}
+
+#content {
+  background: #E5E7EB;
+  flex: 1 0 auto;
+  padding: 50px 40px;
+  /* enable grow, disable shrink */
+}
